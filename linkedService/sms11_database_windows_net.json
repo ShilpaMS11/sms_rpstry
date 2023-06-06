@@ -1,0 +1,19 @@
+{
+	"name": "sms11_database_windows_net",
+	"properties": {
+		"description": "created sql connection sms11.database.windows.net",
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=sms11.database.windows.net;Initial Catalog=sms11",
+			"credential": {
+				"referenceName": "sms11",
+				"type": "CredentialReference"
+			}
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
