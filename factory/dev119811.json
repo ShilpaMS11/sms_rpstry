@@ -1,9 +1,20 @@
 {
 	"name": "dev119811",
+	"properties": {
+		"globalConfigurations": {
+			"PipelineBillingEnabled": "false"
+		}
+	},
 	"location": "eastus",
 	"identity": {
-		"type": "SystemAssigned",
+		"type": "SystemAssigned,UserAssigned",
 		"principalId": "8f2df51c-e1f9-4970-9e51-089cbb9bd4b4",
-		"tenantId": "3a8716b6-af69-4655-b550-3176e6a30ce9"
+		"tenantId": "3a8716b6-af69-4655-b550-3176e6a30ce9",
+		"userAssignedIdentities": {
+			"/subscriptions/de5dd071-c5fd-42dd-8611-d97e34ef204b/resourcegroups/sms/providers/Microsoft.ManagedIdentity/userAssignedIdentities/sms-user-managed-identity": {
+				"clientId": "621d2925-cad7-446f-a899-0e67f59b9ed0",
+				"principalId": "e7b8765d-ff64-4b0a-9006-1b6e349826eb"
+			}
+		}
 	}
 }
