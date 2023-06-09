@@ -127,7 +127,7 @@
 				}
 			},
 			{
-				"name": "Filter1",
+				"name": "Filter_Coustomer",
 				"type": "Filter",
 				"dependsOn": [],
 				"userProperties": []
