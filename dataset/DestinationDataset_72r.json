@@ -1,0 +1,16 @@
+{
+	"name": "DestinationDataset_72r",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sms11_database_windows_net",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "SalesLTaddress"
+		}
+	}
+}
