@@ -17,7 +17,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
-						"sqlReaderQuery": "Select * from sms11.Information_schema.tables\nwhere table_type='Base Table'",
+						"sqlReaderQuery": "SELECT *\nFROM sms11.Information_schema.tables\nWHERE TABLE_TYPE = 'BASE TABLE'\n  AND (TABLE_NAME NOT LIKE '%Customer%' AND TABLE_NAME NOT LIKE '%Product%');\n",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
@@ -64,7 +64,7 @@
 								},
 								{
 									"name": "Destination",
-									"value": "output/adf/@{concat(item().TABLE_NAME,'.csv')}"
+									"value": "output/test/@{concat(item().TABLE_NAME,'.csv')}"
 								}
 							],
 							"typeProperties": {
