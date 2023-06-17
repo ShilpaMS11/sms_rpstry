@@ -1,0 +1,60 @@
+{
+	"name": "DelimitedText2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage3",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "adf",
+				"container": "output"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "9",
+				"type": "String"
+			},
+			{
+				"name": "8713 Yosemite Ct.",
+				"type": "String"
+			},
+			{
+				"name": "Prop_2",
+				"type": "String"
+			},
+			{
+				"name": "Bothell",
+				"type": "String"
+			},
+			{
+				"name": "Washington",
+				"type": "String"
+			},
+			{
+				"name": "United States",
+				"type": "String"
+			},
+			{
+				"name": "98011",
+				"type": "String"
+			},
+			{
+				"name": "268af621-76d7-4c78-9441-144fd139821a",
+				"type": "String"
+			},
+			{
+				"name": "2006-07-01 00:00:00.0000000",
+				"type": "String"
+			}
+		]
+	}
+}
