@@ -23,13 +23,13 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'sms11_database_windows_net'"
 		},
-		"storage_based_trigger1_properties_typeProperties_scope": {
-			"type": "string",
-			"defaultValue": "/subscriptions/de5dd071-c5fd-42dd-8611-d97e34ef204b/resourceGroups/sms/providers/Microsoft.Storage/storageAccounts/sms1198"
-		},
 		"AzureBlobStorage3_sasUri": {
 			"type": "secureString",
 			"metadata": "Secure string for 'sasUri' of 'AzureBlobStorage3'"
+		},
+		"storage_based_trigger1_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/de5dd071-c5fd-42dd-8611-d97e34ef204b/resourceGroups/sms/providers/Microsoft.Storage/storageAccounts/sms1198"
 		},
 		"containerUri": {
 			"type": "string",
@@ -70,6 +70,9 @@
 					"sms11_database_windows_net_connectionString": {
 						"value": "[parameters('sms11_database_windows_net_connectionString')]"
 					},
+					"storage_based_trigger1_properties_typeProperties_scope": {
+						"value": "[parameters('storage_based_trigger1_properties_typeProperties_scope')]"
+					},
 					"AzureBlobStorage3_sasUri": {
 						"value": "[parameters('AzureBlobStorage3_sasUri')]"
 					}
@@ -90,9 +93,6 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
-					},
-					"storage_based_trigger1_properties_typeProperties_scope": {
-						"value": "[parameters('storage_based_trigger1_properties_typeProperties_scope')]"
 					}
 				}
 			},
