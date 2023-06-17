@@ -20,6 +20,9 @@
 		"storage_based_trigger1_properties_typeProperties_scope": {
 			"value": "/subscriptions/de5dd071-c5fd-42dd-8611-d97e34ef204b/resourceGroups/sms/providers/Microsoft.Storage/storageAccounts/sms1198"
 		},
+		"AzureBlobStorage3_sasUri": {
+			"value": ""
+		},
 		"containerUri": {
 			"value": ""
 		},
